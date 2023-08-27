@@ -1,8 +1,8 @@
 require("dotenv").config({ path: `../.env` });
 const { Client, IntentsBitField } = require("discord.js");
 
-// const coopRequestChannelId = "877091060101300274"; //coop-request channel
-const coopRequestChannelId = "1111523607554830376"; //bot-testing channel
+const coopRequestChannelId = "877091060101300274"; //coop-request channel
+// const coopRequestChannelId = "1111523607554830376"; //bot-testing channel
 
 const client = new Client({
   intents: [
@@ -30,4 +30,6 @@ client.on("messageReactionAdd", async (reaction, user) => {
   });
 });
 
-client.login(process.env.TOKEN_ID);
+client.login(
+  "MTE0NTIyMjU5MjkyNDQ5MTgwNg.GMJBDj.J-KJrO8bcoujrxSG2pQvTZacWld65ONqK-g_xs"
+);
