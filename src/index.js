@@ -30,6 +30,4 @@ client.on("messageReactionAdd", async (reaction, user) => {
   });
 });
 
-client.login(
-  "MTE0NTIyMjU5MjkyNDQ5MTgwNg.GMJBDj.J-KJrO8bcoujrxSG2pQvTZacWld65ONqK-g_xs"
-);
+client.login(process.env.TOKEN_ID);
